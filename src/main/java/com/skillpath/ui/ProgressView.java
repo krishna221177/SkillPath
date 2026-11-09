@@ -134,9 +134,7 @@ public class ProgressView extends VerticalLayout {
         progressPercentHeading.getStyle().set("font-size", "2.6rem");
         progressPercentHeading.getStyle().set("font-weight", "900");
         progressPercentHeading.getStyle().set("margin", "0");
-        progressPercentHeading.getStyle().set("background", "linear-gradient(135deg, #648CFF, #55D6E8)");
-        progressPercentHeading.getStyle().set("-webkit-background-clip", "text");
-        progressPercentHeading.getStyle().set("-webkit-text-fill-color", "transparent");
+        progressPercentHeading.getStyle().set("color", "#55D6E8");
 
         VerticalLayout labelBox = new VerticalLayout();
         labelBox.setPadding(false);

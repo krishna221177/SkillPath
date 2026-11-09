@@ -21,6 +21,7 @@ public class MainLayout extends AppLayout {
 
     public MainLayout(StudentService studentService) {
         this.studentService = studentService;
+        getElement().getThemeList().add("dark");
         setPrimarySection(Section.DRAWER);
         createHeader();
         createDrawer();
@@ -36,9 +37,7 @@ public class MainLayout extends AppLayout {
         pageBrand.getStyle().set("font-size", "1.25rem");
         pageBrand.getStyle().set("font-weight", "700");
         pageBrand.getStyle().set("margin", "0");
-        pageBrand.getStyle().set("background", "linear-gradient(90deg, #648CFF, #55D6E8)");
-        pageBrand.getStyle().set("-webkit-background-clip", "text");
-        pageBrand.getStyle().set("-webkit-text-fill-color", "transparent");
+        pageBrand.getStyle().set("color", "var(--skillpath-accent-blue)");
 
         Span subtitle = new Span("Student Skill-Gap & Career Roadmap");
         subtitle.getStyle().set("color", "var(--skillpath-text-muted)");

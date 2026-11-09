@@ -141,9 +141,7 @@ public class SkillGapView extends VerticalLayout {
 
         readinessBox.getStyle().set("font-size", "2.8rem");
         readinessBox.getStyle().set("font-weight", "900");
-        readinessBox.getStyle().set("background", "linear-gradient(135deg, #55D6E8 0%, #648CFF 100%)");
-        readinessBox.getStyle().set("-webkit-background-clip", "text");
-        readinessBox.getStyle().set("-webkit-text-fill-color", "transparent");
+        readinessBox.getStyle().set("color", "#55D6E8");
 
         VerticalLayout labelBox = new VerticalLayout();
         labelBox.setPadding(false);

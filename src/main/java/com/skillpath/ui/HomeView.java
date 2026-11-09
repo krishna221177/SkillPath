@@ -46,9 +46,7 @@ public class HomeView extends VerticalLayout {
         heroTitle.getStyle().set("font-weight", "800");
         heroTitle.getStyle().set("line-height", "1.2");
         heroTitle.getStyle().set("margin", "0.75rem 0");
-        heroTitle.getStyle().set("background", "linear-gradient(135deg, #FFFFFF 30%, #AAB4CA 100%)");
-        heroTitle.getStyle().set("-webkit-background-clip", "text");
-        heroTitle.getStyle().set("-webkit-text-fill-color", "transparent");
+        heroTitle.getStyle().set("color", "#FFFFFF");
 
         Paragraph heroDesc = new Paragraph(
                 "SkillPath empowers college students to evaluate their technical proficiencies against " +
