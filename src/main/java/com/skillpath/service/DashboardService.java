@@ -46,7 +46,8 @@ public class DashboardService {
         summary.setTargetCareer(targetRole);
 
         if (targetRole != null) {
-            SkillGapAnalysisResultDto gapAnalysis = skillGapAnalysisService.analyze(student, targetRole);
+            // Use (Long, Long) overload — avoids passing Student object and re-fetching skills inside analyze()
+            SkillGapAnalysisResultDto gapAnalysis = skillGapAnalysisService.analyze(studentId, targetRole.getId());
             summary.setReadinessPercentage(gapAnalysis.getReadinessPercentage());
             summary.setMissingSkillsCount(gapAnalysis.getMissingCount());
             summary.setSkillsNeedingImprovementCount(gapAnalysis.getNeedsImprovementCount());

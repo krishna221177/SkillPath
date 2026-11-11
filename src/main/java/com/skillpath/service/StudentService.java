@@ -24,9 +24,9 @@ public class StudentService {
     }
 
     public Student getOrCreateDefaultStudent() {
-        List<Student> students = studentRepository.findAll();
-        if (!students.isEmpty()) {
-            return students.get(0);
+        Optional<Student> existing = studentRepository.findFirstByOrderByIdAsc();
+        if (existing.isPresent()) {
+            return existing.get();
         }
 
         // Initialize default student

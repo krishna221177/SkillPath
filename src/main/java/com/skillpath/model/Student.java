@@ -39,7 +39,7 @@ public class Student {
     @JoinColumn(name = "target_career_id")
     private CareerRole targetCareer;
 
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<StudentSkill> skills = new ArrayList<>();
 
     public Student() {
